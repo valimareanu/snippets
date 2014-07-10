@@ -14,6 +14,7 @@ return array(
 	*/
 
 	'debug' => false,
+	'profiler'=> true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +79,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'h3ZLWIrdvnslJavj2hW0PA4muEVEMjoM',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -95,7 +96,6 @@ return array(
 
 	'providers' => array(
 
-		'Fideloper\Proxy\ProxyServiceProvider',
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
@@ -122,6 +122,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
 
 	),
 

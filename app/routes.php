@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', array('as' => 'new_snippet', 'uses' => 'snippets@create'));
+Route::post('/', 'snippets@store');
+Route::get('/{id}/fork', array('as' => 'fork_snippet', 'uses' => 'snippets@fork'))->where('id', '[0-9]+');
+Route::get('/{id}', array('as' => 'snippet', 'uses' => 'snippets@show'))->where('id', '[0-9]+');
