@@ -9,10 +9,10 @@
 			{{ Form::submit('Save', array('class' => 'btn btn-success'))}}
 		</div>
 	{{ Form::close() }}
-@stop
+@endsection
 
 @section('scripts')
 	<script type="text/javascript">
 		$('textarea').height( $(window).height() - 50);
 	</script>
-@stop
+@endsection

@@ -1,5 +1,5 @@
 <?php
 
 	return array(
-		'profiler' => false,
-		)
+		'profiler' => false
+		);
